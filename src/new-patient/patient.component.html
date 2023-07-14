@@ -1,0 +1,57 @@
+<div class="container mt-5">
+    <div class="text-center" style="padding: 20px; color: blue;">
+        <h1><p>Welcome</p> </h1>
+        <p>Please record your patient below </p>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #patientForm="ngForm" (ngSubmit)="recordPatients(patientForm)">
+
+          <input type="text"
+                 ngModel
+                 name="firstName"
+                 id="firstName"
+                 placeholder="Enter patient firstName"
+                 class="form-control mb-3"
+          >
+
+          <input type="text"
+                 ngModel
+                 name="lastName"
+                 id="lastName"
+                 placeholder="Enter patient firstName"
+                 class="form-control mb-3"
+          >
+
+          <input type="text"
+                 ngModel
+                 name="address"
+                 id="address"
+                 placeholder="Enter patient firstName"
+                 class="form-control mb-3"
+          >
+
+            <p>Date item of birth</p>
+            <input type="date"
+            ngModel name="birthDate"
+            id="birthDate"
+            placeholder="Enter date of birth"
+            class="form-control mb-3"
+            >
+          <label>
+            <input type="radio" ngModel name="gender" value="MALE">Male
+          </label>
+          <br>
+          <label>
+            <input type="radio" ngModel name="gender" value="FEMALE"> Female
+          </label>
+                    <br>
+            <br>
+\
+            <input type="submit"
+            value="Save Record"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <div class="text-center" style="padding: 20px; color: blue;">
+            <h1>List Of Vitals Saved</h1>
+        </div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor='let vital of vitalsList'>
+             {{vitalsList}}
+            </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

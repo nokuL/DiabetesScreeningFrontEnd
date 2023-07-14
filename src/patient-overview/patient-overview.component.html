@@ -1,0 +1,52 @@
+
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <div class="text-center" style="padding: 20px; color: blue;">
+            <h1>Patient Successfully Recorded</h1>
+        </div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">First Name</th>
+              <td>{{patient.firstName}}</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Last Name</th>
+              <td>{{patient.lastName}}</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Gender</th>
+              <td>{{patient.gender}}</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Date of birth</th>
+              <td>{{patient.birthDate}}</td>
+
+            </tr>
+              <tr>
+                <th scope="row">Address</th>
+                <td>{{patient.address}}</td>
+
+              </tr>
+            <tr>
+              <th scope="row">ID</th>
+              <td>{{patient.id}}</td>
+
+            </tr>
+
+            </tbody>
+          </table>
+        <button type="button" class="btn btn-success"  (click)="recordPatientVitals()">Record Patient Vitals</button>
+
+    </div>
+</div>

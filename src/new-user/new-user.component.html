@@ -1,0 +1,70 @@
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #newUserForm="ngForm" (ngSubmit)="registerUser(newUserForm)">
+            <input type="text"
+            ngModel
+            name="userFirstName"
+            id="firstName"
+            placeholder="Enter your firstName"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="userLastName"
+            id="lastName"
+            placeholder="Enter your lastName"
+            class="form-control mb-3"
+            >
+
+            <input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your prefered userName"
+            class="form-control mb-3"
+            >
+
+
+            <input type="text"
+            ngModel
+            name="userPassword"
+            id="password"
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            >
+            
+            <p>Date of Birth</p>
+            <input type="date"
+            ngModel name="dateOfBirth"
+            id="dateOfBirth"
+            placeholder="Enter date of birth"
+            class="form-control mb-3"
+            >
+
+            <label>
+                <input type="radio" name="gender" value="MALE">Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="FEMALE"> Female
+            </label>
+            <br>
+            <br>
+            <select>
+                <option value="1">Admin</option>
+                <option value="2">Client</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="checkBoxFlag"/>
+                 Active
+            </label>
+
+
+            <input type="submit"
+            value="Register User"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>

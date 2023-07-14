@@ -1,0 +1,41 @@
+
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <div class="text-center" style="padding: 20px; color: blue;">
+            <h1>User Successfully Created</h1>
+            <p>Please login to record your Patients !</p>
+        </div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">First Name</th>
+                <td>{{user.userFirstName}}</td>
+
+              </tr>
+              <tr>
+                <th scope="row">Last Name</th>
+                <td>{{user.userLastName}}</td>
+
+              </tr>
+               <tr>
+                <th scope="row">UserName</th>
+                <td>{{user.userName}}</td>
+
+              </tr>
+              <tr>
+                <th scope="row"><button type="button" class="btn btn-success">Edit</button></th>
+                <td><button type="button" class="btn btn-danger"></button></td>
+
+              </tr>
+
+            </tbody>
+          </table>
+    </div>
+</div>

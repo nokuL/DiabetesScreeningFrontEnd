@@ -1,0 +1,111 @@
+<div class="container mt-5">
+    <div class="text-center" style="padding: 20px; color: blue;">
+        <h1><p>Recording vitals for {{patientFirstName}} </p> </h1>
+        <p>Please record  patient vitals  below </p>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #vitalsForm="ngForm" (ngSubmit)="recordVitals(vitalsForm)">
+
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row"> <input type="number"
+                                      ngModel
+                                      name="temperature"
+                                      id="temperature"
+                                      placeholder="Enter patient temperature"
+                                      class="form-control mb-3">
+                </th>
+            </tr>
+            <tr>
+              <th>   <input type="number"
+                            ngModel
+                            name="height"
+                            id="height"
+                            placeholder="Enter patient height"
+                            class="form-control mb-3"
+              ></th>
+            </tr>
+
+            <tr>
+              <th>  <input type="number"
+                           ngModel
+                           name="weight"
+                           id="weight"
+                           placeholder="Enter patient weight"
+                           class="form-control mb-3"
+              ></th>
+            </tr>
+            <tr>
+              <th><input type="number"
+                         ngModel
+                         name="pulse"
+                         id="pulse"
+                         placeholder="Enter patient pulse"
+                         class="form-control mb-3"
+              ></th>
+            </tr>
+            <tr>
+              <th> <input type="number"
+                          ngModel
+                          name="bloodGlucose"
+                          id="bloodGlucose"
+                          placeholder="Enter patient blood glucose"
+                          class="form-control mb-3"
+              ></th>
+
+            </tr>
+            <tr>
+              <th>
+                <input type="number"
+                       ngModel
+                       name="diastolicBloodPressure"
+                       id="diastolicBloodPressure"
+                       placeholder="Enter patient diastolic blood pressure"
+                       class="form-control mb-3"
+                >
+              </th>
+
+            </tr>
+            <tr>
+              <th>
+                <input type="number"
+                       ngModel
+                       name="systolicBloodPressure"
+                       id="systolicBloodPressure"
+                       placeholder="Enter patient systolic blood pressure"
+                       class="form-control mb-3"
+                >
+              </th>
+
+
+            </tr>
+            <input type="text"
+                   ngModel
+                   name="patientId"
+                   id="patientId"
+                   class="form-control mb-3"
+            >
+
+            </tbody>
+          </table>
+
+
+            <br>
+            <br>
+
+            <input type="submit"
+            value="Save Record"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>
