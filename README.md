@@ -1,6 +1,7 @@
 # AngularClientApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+It uses HighCharts for rendering dashboards for business intelligence
 
 ## Development server
 
